@@ -169,7 +169,6 @@ if args.update == True:
     filemanager.updatealt()
 
 if args.switchalt != None:
-    filemanager.updatealt()
     filemanager.switchalt(args.switchalt)
 
 if args.deletealt == True:
