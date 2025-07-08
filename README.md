@@ -1,7 +1,7 @@
 # AltKeeper
 Alt Keeper a git like *version control* still in work
 
-_**Introduction**_
+# Introduction
 
 Alt-Keeper is a program written in python that handles version controls and more, it has the git equvialant features that resembles,
  - commit
@@ -12,7 +12,7 @@ Alt-Keeper is a program written in python that handles version controls and more
  - and _ETC_
 it is designed for the simplicity of use and hack-able features
 
-_**Basic Use**_
+# Basic Use
 
 **--init**
 this is similar to the git feature: _git init_, it intializes the folders where all your versions will be kept, and data and more,it generates a default of the _main_ branch which has all the content of the user's orginal files.
@@ -50,7 +50,7 @@ this flag updates the content of your _alternative_ that your on
 shows the list of _alternatives_
 >*!* Nothing to fear here xD *!*
 
-_**Terms**_
+# Terms
 
 _alternative_: the other version of what it origins from.
 

@@ -73,6 +73,7 @@ class Filemanager:
     def initAK(self):
         if not os.path.exists(f"{self.projectname}_AK"):
             os.mkdir(f"{self.projectname}_AK")
+            
         else:
             _e_FEE = Error("File Exist Error", "The folder that user has tried to init alt keeper already exists!")
             _e_FEE.stateandstore()
