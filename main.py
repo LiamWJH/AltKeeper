@@ -15,7 +15,7 @@ argparser.add_argument("--init", action = "store_true")
 argparser.add_argument("--uninit", action = "store_true")
 argparser.add_argument("--makealt", type=str, default=None)
 argparser.add_argument("--switchalt", type=str, default=None)
-argparser.add_argument("--description", type=str, default=None)
+argparser.add_argument("--desc", type=str, default=None)
 argparser.add_argument("--showdesc", action = "store_true")
 argparser.add_argument("--deletealt", action = "store_true")
 argparser.add_argument("--update", action = "store_true")
@@ -176,7 +176,7 @@ if args.deletealt == True:
 if args.alts == True:
     filemanager.showalts()
 
-if args.description != None:
+if args.desc != None:
     with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", "currentbranch.txt"), "r") as f:
         alt = f.read().split(":")[1]
     with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", alt, "description.txt"), "w") as f:
