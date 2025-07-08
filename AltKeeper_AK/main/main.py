@@ -186,6 +186,6 @@ if args.showdesc == True:
     with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", "currentbranch.txt"), "r") as f:
         alt = f.read().split(":")[1]
     with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", alt, "description.txt"), "r") as f:
-        print("->",f.read())
+        f.write(args.showdesc)
         
  
