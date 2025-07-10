@@ -67,13 +67,13 @@ class Error:
 #	File management
 ###############
 class Filemanager:
+    
     def __init__(self, projectname):
         self.projectname = projectname
 
     def initAK(self):
         if not os.path.exists(f"{self.projectname}_AK"):
             os.mkdir(f"{self.projectname}_AK")
-            
         else:
             _e_FEE = Error("File Exist Error", "The folder that user has tried to init alt keeper already exists!")
             _e_FEE.stateandstore()
@@ -94,6 +94,7 @@ class Filemanager:
                 
             self.updatealt()
     
+      
     def updatealt(self):
         with open(os.path.join(os.getcwd(), f"{self.projectname}_AK", "currentbranch.txt"), "r") as f:
             altname = f.read().split(":")[1]
@@ -133,7 +134,7 @@ class Filemanager:
         else:
             _e_DME = Error("Delete Main Error", "User tried to delete main alt!")
             _e_DME.stateandstore()
-
+    
     def uninit(self):
         if input("Are you sure?:[Y/N]").lower() == "y":
             shutil.rmtree(os.path.join(os.getcwd(), f"{self.projectname}_AK"))
@@ -185,6 +186,7 @@ if args.desc != None:
     with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", alt, "description.txt"), "w") as f:
         f.write(args.description)
 
+    
 if args.showdesc == True:
     with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", "currentbranch.txt"), "r") as f:
         alt = f.read().split(":")[1]
