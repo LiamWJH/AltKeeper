@@ -13,7 +13,7 @@ Alt-Keeper is a program written in python that handles version controls and more
 it is designed for the simplicity of use and hack-able features
 
 # IMPORTANRT
-If you want use the Altkeeper globally system wide_(Which i *Strongly* recommend)_ follow these steps
+If you want use the Altkeeper globally system wide _(Which i *Strongly* recommend)_ follow these steps
 1. find the system enviornments on your computer(Search in search bar cmd prompt whatever)
 2. make a folder in the C:\ named whatever you want (e.g.) Altkeeper and place the exe there
 3. in the system variables in the path section add the path to to the folder where you have placed the Altkeeper1.x.x.exe
