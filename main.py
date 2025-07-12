@@ -195,7 +195,9 @@ if args.desc != None:
         with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", "currentbranch.txt"), "r") as f:
             alt = f.read().split(":")[1]
         with open(os.path.join(os.getcwd(), f"{prjNAME}_AK", alt, "description.txt"), "w") as f:
-            f.write(args.description)
+            f.write(args.desc)
+
+            
     except Exception as e:
         e = Error("Internal file load error", "do --uninit then --init")
         e()
